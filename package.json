@@ -1,0 +1,8 @@
+{
+  "name": "webpack_basicconfig",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "gonghang <cquptgh@qq.com>",
+  "license": "MIT",
+  "devDependencies": {}
+}
