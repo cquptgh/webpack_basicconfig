@@ -4,5 +4,15 @@
   "main": "index.js",
   "author": "gonghang <cquptgh@qq.com>",
   "license": "MIT",
-  "devDependencies": {}
+  "devDependencies": {},
+  "browerslist": {
+    "development": [],
+    "production": []
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "env": {
+      "browser": true
+    }
+  }
 }
