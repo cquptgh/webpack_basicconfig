@@ -2,7 +2,7 @@ const { resolve } = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  entry: './src/index.js',
+  entry: ['./src/index.js','./src/index.html'],         //为了解决html文件无法热更新的问题
   output: {
     filename: 'js/built.js',
     path: resolve(__dirname,'build')
@@ -55,7 +55,9 @@ module.exports = {
     contentBase: resolve(__dirname, 'build'),      //项目构建后的路径
     compress: true,             //启动gzip压缩
     port: 3000,
-    open: true        //自动打开浏览器
+    open: true,        //自动打开浏览器
+    hot: true           //开启HMR功能
   },
+  devtool: 'eval-cheap-module-source-map',
   mode: 'development'
 }
